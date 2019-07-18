@@ -1,6 +1,8 @@
 import json
-
 import pytest
+import sys, os
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from src.pipeline.postprocessing_component import input_fn, output_fn
 

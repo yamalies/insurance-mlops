@@ -1,4 +1,4 @@
-import json
+import json, sys
 import os
 import shutil
 import tarfile
@@ -7,14 +7,14 @@ import warnings
 from pathlib import Path
 
 import pytest
+# Define the path to the clean insurance data file
+DATA_FILEPATH = Path(__file__).parent.parent / "data" / "clean" / "clean-insurance.csv"
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from src.evaluation.script import evaluate
 from src.processing.script import preprocess
 from src.training.script import train
-
-# Define the path to the clean insurance data file
-DATA_FILEPATH = Path(__file__).parent.parent / "data" / "clean" / "clean-insurance.csv"
-
 
 @pytest.fixture(scope="function", autouse=False)
 def directory():

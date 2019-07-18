@@ -7,6 +7,10 @@ from pathlib import Path
 import numpy as np
 import pytest
 
+import sys, os
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from src.pipeline.preprocessing_component import (
     input_fn,
     model_fn,
