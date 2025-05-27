@@ -1,6 +1,3 @@
-# | filename: app.py
-# | code-line-numbers: true
-
 import tarfile
 import tempfile
 from pathlib import Path

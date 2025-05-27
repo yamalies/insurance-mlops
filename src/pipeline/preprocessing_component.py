@@ -1,6 +1,3 @@
-# | filename: preprocessing_component.py
-# | code-line-numbers: true
-
 import json
 import os
 from io import StringIO

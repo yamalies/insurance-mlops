@@ -1,6 +1,3 @@
-# | filename: script.py
-# | code-line-numbers: true
-
 import argparse
 import json
 import os
