@@ -1,6 +1,3 @@
-# | filename: postprocessing_component.py
-# | code-line-numbers: true
-
 import json
 import os
 
